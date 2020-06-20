@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/hobby.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="css/tab.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body class="wrapper js-main">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__items">
+          <a href="#welcome" class="nav__item">Main</a>
+        </li>
+        <li class="nav__items"><a href="#hobby" class="nav__item">Hobby</a></li>
+        <li class="nav__items"><a href="#tab" class="nav__item">Pizza</a></li>
+      </ul>
+    </nav>
+    <main class="main">
+      <header class="main__header">
+        <h1 class="main__topHeader">jestem Oskar Wojciechowski</h1>
+        <h2 class="main__bottomHeader">
+          Kursant<span class="main__logo">you</span
+          ><span class="main__logo main__logo--newColor">code</span>
+        </h2>
+      </header>
+      <img
+        class="main__myPhoto"
+        src="https://i.postimg.cc/L6HPk6VR/photo-small.png"
+        alt="My photo"
+        id="welcome"
+      />
+      <p class="main__paragraph">Witam wszystkich na mojej stronie!</p>
+    </main>
+    <section class="buttons">
+      <button class="buttons__dark">Dark Mode</button>
+      <button class="buttons__change">Change image</button>
+      <button class="buttons__delete">Delete</button>
+    </section>
+    <section class="hobby" id="hobby">
+      <h2 class="hobby__title">Moje pasje</h2>
+      <div class="hobby__item hobby__item--gym">
+        <p class="hobby__paragraph">Sport</p>
+      </div>
+      <div class="hobby__item hobby__item--travel">
+        <p class="hobby__paragraph">Podróże</p>
+      </div>
+      <div class="hobby__item hobby__item--cooking">
+        <p class="hobby__paragraph">Gotowanie</p>
+      </div>
+    </section>
+    <section class="tableContainer" id="tab">
+      <table class="table">
+        <caption class="table__name">
+          Jak zrobić dobre ciasto na pizzę
+        </caption>
+        <tr class="table__Row">
+          <th class="table__Header table__Cell" scope="col"></th>
+          <th class="table__Header table__Cell" scope="col">Składniki</th>
+          <th class="table__Header table__Cell" scope="col">Ilość</th>
+          <th class="table__Header table__Cell" scope="col">Kcal</th>
+        </tr>
+        <tr class="table__Row">
+          <th class="table__Header table__Cell" scope="row">1</th>
+          <th class="table__Cell">Mąka pszenna</th>
+          <th class="table__Cell">250g</th>
+          <th class="table__Cell">200 kcal</th>
+        </tr>
+        <tr class="table__Row">
+          <th class="table__Header table__Cell" scope="row">2</th>
+          <th class="table__Cell">Świeże drożdże</th>
+          <th class="table__Cell">250g</th>
+          <th class="table__Cell">20 kcal</th>
+        </tr>
+        <tr class="table__Row">
+          <th class="table__Header table__Cell" scope="row">3</th>
+          <th class="table__Cell">Cukier</th>
+          <th class="table__Cell">5g</th>
+          <th class="table__Cell">25 kcal</th>
+        </tr>
+        <tr class="table__Row">
+          <th class="table__Header table__Cell" scope="row">4</th>
+          <th class="table__Cell">Oliwa z oliwek</th>
+          <th class="table__Cell">10g</th>
+          <th class="table__Cell">30 kcal</th>
+        </tr>
+        <tr class="table__Row">
+          <th class="table__Header table__Cell" scope="row">5</th>
+          <th class="table__Cell">Woda</th>
+          <th class="table__Cell">150ml</th>
+          <th class="table__Cell">0 kcal</th>
+        </tr>
+      </table>
+    </section>
+    <footer class="footer" id="footer">
+      All Content Copyright 2020. All Rights Reserved
+    </footer>
+  </body>
+</html>

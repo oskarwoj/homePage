@@ -1,0 +1,27 @@
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+}
+
+.js-black {
+  background-color: #000;
+  color: #fff;
+}
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+

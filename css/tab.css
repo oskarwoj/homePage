@@ -1,0 +1,44 @@
+
+/*===========================================
+TAB
+=========================================== */
+
+.table {
+    width: 99%;
+    font-size: 20px;
+    margin-top: 30px;
+    overflow-x: auto;
+  }
+  
+  .table__name {
+    padding: 5px 0;
+    width: 100%;
+  }
+  
+  .table__Header,
+  .table__name {
+    background-color: #5e1d1d;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .table__Cell {
+    border: 2px solid white;
+    text-align: center;
+    font-weight: normal;
+    padding: 20px;
+  }
+  
+  .table__Row:nth-child(even) {
+    background-color: #ddd;
+  }
+  
+  .table__Row:nth-child(odd) {
+    background-color: transparent;
+  }
+  
+  .table__Row:not(:first-child):hover {
+    background-color: #bbb;
+    transform: scale(1.01);
+  }
+  

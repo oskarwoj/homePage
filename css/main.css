@@ -1,0 +1,47 @@
+/* ==============================
+MAIN
+================================= */
+
+.main {
+  text-align: center;
+}
+
+.main__topHeader {
+  text-transform: uppercase;
+  box-shadow: 6px 3px 14px 0px black;
+  background-color: #c09f9f;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+
+.main__bottomHeader {
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.main__logo {
+  font-size: 30px;
+  color: #664545;
+  margin-left: 10px;
+}
+
+.main__logo--newColor {
+  color: #ffa500;
+  margin-left: 0px;
+}
+
+.main__myPhoto {
+  width: 55%;
+  margin-top: 10px;
+}
+
+.main__paragraph {
+  margin-top: 11px;
+  line-height: 110%;
+  font-size: 30px;
+  word-spacing: 2px;
+}
+
+.myPhotoRemove {
+  display: none;
+}

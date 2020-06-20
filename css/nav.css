@@ -1,0 +1,37 @@
+/* ==============================
+NAV
+================================= */
+
+.nav {
+  overflow: hidden;
+}
+
+.nav__list {
+  float: right;
+  list-style: none;
+  margin-top: 5px;
+}
+
+.nav__items {
+  float: left;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.nav__item {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #555;
+  border-bottom: 2px solid white;
+  transition: 1s;
+}
+
+.nav__item:hover {
+  border-bottom: 2px solid black;
+}
+
+.nav__item:active {
+  outline: 2px solid black;
+  border-bottom: none;
+}
