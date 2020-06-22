@@ -1,6 +1,6 @@
 # HOMEPAGE
 
-## LIVE: [Github Pages version](https://oskarwoj.github.io/homePage/)
+## LIVE: [Github Pages](https://oskarwoj.github.io/homePage/)
 
 ## Used technologies:
 
