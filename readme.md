@@ -1,22 +1,19 @@
-
 # HOMEPAGE
 
-## LIVE:   [Github Pages version](https://oskarwoj.github.io/homePage/)
+## LIVE: [Github Pages version](https://oskarwoj.github.io/homePage/)
 
-  
 ## Used technologies:
 
- - HTML
- - CSS
- - JavaScript
-
+- HTML
+- CSS
+- JavaScript
 
 ## Content and features:
 
--  ##### Navbar
+- ##### Navbar
 
--  ##### Welcome section
+- ##### Welcome section
 
--  ##### Hobby 
+- ##### Hobby
 
--  ##### How to make a pizza 
+- ##### How to make a pizza
