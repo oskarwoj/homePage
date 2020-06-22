@@ -1,33 +1,42 @@
-console.log("Witam developerów !");
+{
+  const toogleBackground = () => {
+    const changeBackgroundButton = document.querySelector(".buttons__dark");
+    const body = document.documentElement;
+    if (changeBackgroundButton.innerText === "Dark Mode") {
+      changeBackgroundButton.innerText = "Light Mode";
+      body.classList.add("js-black");
+    } else {
+      changeBackgroundButton.innerText = "Dark Mode";
+      body.classList.remove("js-black");
+    }
+  };
 
-let dark = document.querySelector(".js-main");
-let button1 = document.querySelector(".buttons__dark");
+  const deleteImg = () => {
+    const mainPhoto = document.querySelector(".main__myPhoto");
+    mainPhoto.classList.toggle("myPhotoRemove");
+  };
 
-let mainPhoto = document.querySelector(".main__myPhoto");
-let button2 = document.querySelector(".buttons__change");
+  const changeImg = () => {
+    const changePhoto = document.querySelector(".buttons__change");
+    const mainPhoto = document.querySelector(".main__myPhoto");
+    if (changePhoto.innerText === "Change Image") {
+      mainPhoto.src = "https://i.postimg.cc/xd2hvRCP/fawkes-157941-1280.png";
+      changePhoto.innerText = "Undo Change ";
+    } else {
+      mainPhoto.src = "https://i.postimg.cc/L6HPk6VR/photo-small.png";
+      changePhoto.innerText = "Change Image";
+    }
+  };
 
-let button3 = document.querySelector(".buttons__delete");
+  const init = () => {
+    const changeBackgroundButton = document.querySelector(".buttons__dark");
+    const changePhoto = document.querySelector(".buttons__change");
+    const deleteButton = document.querySelector(".buttons__delete");
 
-button1.addEventListener("click", () => {
-  if (button1.innerText === "Dark Mode") {
-    button1.innerText = "Light Mode";
-    dark.classList.add("js-black");
-  } else {
-    button1.innerText = "Dark Mode";
-    dark.classList.remove("js-black");
-  }
-});
+    changeBackgroundButton.addEventListener("click", toogleBackground);
+    deleteButton.addEventListener("click", deleteImg);
+    changePhoto.addEventListener("click", changeImg);
+  };
 
-button2.addEventListener("click", () => {
-  if (button2.innerText === "Change Image") {
-    mainPhoto.src = "https://i.postimg.cc/xd2hvRCP/fawkes-157941-1280.png";
-    button2.innerText = "Undo Change ";
-  } else {
-    mainPhoto.src = "https://i.postimg.cc/L6HPk6VR/photo-small.png";
-    button2.innerText = "Change Image";
-  }
-});
-
-button3.addEventListener("click", () => {
-  mainPhoto.classList.toggle("myPhotoRemove");
-});
+  init();
+}
