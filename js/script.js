@@ -1,7 +1,10 @@
 {
+  const mainPhoto = document.querySelector(".main__myPhoto");
+
   const toogleBackground = () => {
     const changeBackgroundButton = document.querySelector(".buttons__dark");
     const body = document.documentElement;
+    
     if (changeBackgroundButton.innerText === "Dark Mode") {
       changeBackgroundButton.innerText = "Light Mode";
       body.classList.add("js-black");
@@ -12,13 +15,11 @@
   };
 
   const deleteImg = () => {
-    const mainPhoto = document.querySelector(".main__myPhoto");
     mainPhoto.classList.toggle("myPhotoRemove");
   };
 
   const changeImg = () => {
     const changePhoto = document.querySelector(".buttons__change");
-    const mainPhoto = document.querySelector(".main__myPhoto");
     if (changePhoto.innerText === "Change Image") {
       mainPhoto.src = "https://i.postimg.cc/xd2hvRCP/fawkes-157941-1280.png";
       changePhoto.innerText = "Undo Change ";
