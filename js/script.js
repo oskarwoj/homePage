@@ -3,19 +3,18 @@
 
   const toogleBackground = () => {
     const changeBackgroundButton = document.querySelector(".buttons__dark");
-    const body = document.documentElement;
-    
+    let body = document.documentElement;
+
     if (changeBackgroundButton.innerText === "Dark Mode") {
       changeBackgroundButton.innerText = "Light Mode";
-      body.classList.add("js-black");
     } else {
       changeBackgroundButton.innerText = "Dark Mode";
-      body.classList.remove("js-black");
     }
+    body.classList.toggle("js-black");
   };
 
-  const deleteImg = () => {
-    mainPhoto.classList.toggle("myPhotoRemove");
+  const image = () => {
+    mainPhoto.classList.toggle("myPhotoSwitch");
   };
 
   const changeImg = () => {
@@ -35,7 +34,7 @@
     const deleteButton = document.querySelector(".buttons__delete");
 
     changeBackgroundButton.addEventListener("click", toogleBackground);
-    deleteButton.addEventListener("click", deleteImg);
+    deleteButton.addEventListener("click", image);
     changePhoto.addEventListener("click", changeImg);
   };
 

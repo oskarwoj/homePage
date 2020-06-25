@@ -10,10 +10,10 @@
 
 ## Content and features:
 
-- ##### Navbar
+- Navbar
 
-- ##### Welcome section
+- Welcome section
 
-- ##### Hobby
+- Hobby
 
-- ##### How to make a pizza
+- How to make a pizza
